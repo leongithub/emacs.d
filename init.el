@@ -9,7 +9,7 @@
 ;; 设置字体大小
 ;; (set-default-font "幼圆-14") ; 设置字体-大小
 ;; 本来windows可以如上设置，但由于要传到github上，Windows和linux用同一套设置，ubuntu默认的字体还好，所以这种不太理想。用下面的达到设置字体大小的目的
-;; The value is in 1/10pt, so 100 will give you 10pt, etc.
+;; The value is in 1/10pt, so 150 will give you 15pt, etc.
 (set-face-attribute 'default nil :height 150)
 
 (add-to-list 'load-path (expand-file-name "els" user-emacs-directory))
