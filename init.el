@@ -6,6 +6,13 @@
 (global-linum-mode 'linum-node) ; 显示行号
 (setq make-backup-files nil) ; 禁止自动备份文件
 
+;; 编码设置UTF-8
+(setq locale-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+
 ;; 设置字体大小
 ;; (set-default-font "幼圆-14") ; 设置字体-大小
 ;; 本来windows可以如上设置，但由于要传到github上，Windows和linux用同一套设置，ubuntu默认的字体还好，所以这种不太理想。用下面的达到设置字体大小的目的
