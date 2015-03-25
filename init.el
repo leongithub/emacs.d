@@ -13,11 +13,8 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-;; 设置字体大小
-;; (set-default-font "幼圆-14") ; 设置字体-大小
-;; 本来windows可以如上设置，但由于要传到github上，Windows和linux用同一套设置，ubuntu默认的字体还好，所以这种不太理想。用下面的达到设置字体大小的目的
-;; The value is in 1/10pt, so 200 will give you 20pt, etc.
-;; (set-face-attribute 'default nil :height 200)
+;; 设置本地HyperSpec
+(setq common-lisp-hyperspec-root "file:/usr/share/doc/HyperSpec/")
 
 (add-to-list 'load-path (expand-file-name "els" user-emacs-directory))
 ;(add-to-list 'load-path "~/.emacs.d/els") ; 把els路径加入到load-path，以后el插件就可以放放到这个目录
