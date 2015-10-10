@@ -14,3 +14,13 @@
   (require 'package)
   (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
   (package-initialize))
+
+;; 保存上次打开的文件记录，M-x desktop-save, M-x desktop-clear
+(load "desktop")
+(desktop-load-default)
+(desktop-read)
+
+;; Make "C-x o" prompt for a target window when there are more than 2
+;(require 'switch-window)
+;(setq-default switch-window-shortcut-style 'alphabet) ; 用字母而不是数字
+;(global-set-key (kbd "C-x o") 'switch-window)

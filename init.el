@@ -7,3 +7,4 @@
 (load-library "leon-theme") ; 设置主题
 (load-library "leon-slime") ; slime
 (load-library "leon-auto-complete") ; auto-complete
+(load-library "leon-ido") ; ido

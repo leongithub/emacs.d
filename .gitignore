@@ -1,18 +1,24 @@
 auto-save-list/
 eshell/
 url/
+elpa/
+tutorial/
 tramp
+.*
+!.gitignore
+ac-comphist.dat
+ido.last
 
-## ´ËÎª×¢ÊÍ ¨C ½«±» Git ºöÂÔ
-## ºöÂÔËùÓĞ .a ½áÎ²µÄÎÄ¼ş
+## æ­¤ä¸ºæ³¨é‡Š â€“ å°†è¢« Git å¿½ç•¥
+## å¿½ç•¥æ‰€æœ‰ .a ç»“å°¾çš„æ–‡ä»¶
 #*.a
-## µ« lib.a ³ıÍâ
+## ä½† lib.a é™¤å¤–
 #!lib.a
-## ½ö½öºöÂÔÏîÄ¿¸ùÄ¿Â¼ÏÂµÄ TODO ÎÄ¼ş£¬²»°üÀ¨ subdir/TODO
+## ä»…ä»…å¿½ç•¥é¡¹ç›®æ ¹ç›®å½•ä¸‹çš„ TODO æ–‡ä»¶ï¼Œä¸åŒ…æ‹¬ subdir/TODO
 #/TODO
-## ºöÂÔ build/ Ä¿Â¼ÏÂµÄËùÓĞÎÄ¼ş
+## å¿½ç•¥ build/ ç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶
 #build/
-## »áºöÂÔ doc/notes.txt µ«²»°üÀ¨ doc/server/arch.txt
+## ä¼šå¿½ç•¥ doc/notes.txt ä½†ä¸åŒ…æ‹¬ doc/server/arch.txt
 #doc/*.txt
 ## ignore all .txt files in the doc/ directory
 #doc/**/*.txt
