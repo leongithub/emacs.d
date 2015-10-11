@@ -1,17 +1,16 @@
 ;; org-src 代码显示高亮
 ;; #+BEGIN_SRC lang 高亮 #+END_SRC
 (setq org-src-fontify-natively t)
-
+;; load htmlize.el, 源码导出高亮
+(require 'htmlize)
 
 (add-hook 'org-mode-hook 'fn-hook)
-
 
 (defun fn-hook ()
   ; 把org-insert-src-block 绑定到 C-c s i按键上
   (local-set-key (kbd "C-c s i") 'org-insert-src-block)
   ; org-mode自动换行
   (setq truncate-lines nil))
-
 
 ; 代码生成#+BEGIN_SRC形式，也可用自带的 “<s<TAB>”。不过自己定义函数更方便
 (defun org-insert-src-block (src-code-type)
