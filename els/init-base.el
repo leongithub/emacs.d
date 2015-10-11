@@ -21,6 +21,6 @@
 (desktop-read)
 
 ;; Make "C-x o" prompt for a target window when there are more than 2
-;(require 'switch-window)
-;(setq-default switch-window-shortcut-style 'alphabet) ; 用字母而不是数字
-;(global-set-key (kbd "C-x o") 'switch-window)
+(require 'switch-window)
+(setq-default switch-window-shortcut-style 'alphabet) ; 用字母而不是数字
+(global-set-key (kbd "C-x o") 'switch-window)
