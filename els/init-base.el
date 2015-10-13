@@ -24,3 +24,6 @@
 (require 'switch-window)
 (setq-default switch-window-shortcut-style 'alphabet) ; 用字母而不是数字
 (global-set-key (kbd "C-x o") 'switch-window)
+
+;; 设置显示尾部空格
+(setq-default show-trailing-whitespace t)
