@@ -2,8 +2,11 @@
 ;; #+BEGIN_SRC lang 高亮 #+END_SRC
 (setq org-src-fontify-natively t)
 ;; load htmlize.el, 源码导出高亮
+(require-package 'htmlize)
 (require 'htmlize)
 
+
+;;; C-c s i 插入源代码
 (add-hook 'org-mode-hook 'fn-hook)
 
 (defun fn-hook ()
@@ -17,7 +20,7 @@
   "Insert a `SRC-CODE-TYPE' type source code block in org-mode."
   (interactive
    (let ((src-code-types
-          '("lisp" "scheme" "sh" "java" "python" "C" 
+          '("lisp" "scheme" "sh" "java" "python" "C"
 	    "emacs-lisp" "js" "C++" "css" "perl" "ruby")))
      (list (ido-completing-read "Source code type: " src-code-types))))
   (progn

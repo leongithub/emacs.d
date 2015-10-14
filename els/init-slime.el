@@ -6,6 +6,7 @@
 (setq common-lisp-hyperspec-root "file:/usr/share/doc/HyperSpec/")
 
 ;; ac-slime
+(require-package 'ac-slime)
 (require 'ac-slime)
 (add-hook 'slime-mode-hook 'set-up-slime-ac)
 (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)

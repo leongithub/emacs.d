@@ -1,3 +1,4 @@
+(require-package 'solarized-theme)
 (require 'solarized-theme)
 ;(load-theme 'solarized-dark t)
 ;(load-theme 'solarized-light t)
@@ -7,5 +8,6 @@
 (setq calendar-location-name "Zhejiang") 
 (setq calendar-latitude 30.2741)
 (setq calendar-longitude 120.155)
+(require-package 'theme-changer)
 (require 'theme-changer)
 (change-theme 'solarized-light 'solarized-dark)
