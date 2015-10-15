@@ -9,10 +9,11 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-;; 保存上次打开的文件记录，M-x desktop-save, M-x desktop-clear
-(load "desktop")
-(desktop-load-default)
-(desktop-read)
+;; 保存上次打开的文件记录。M-x desktop-clear 清除所有 buffers
+(require 'desktop)
+(desktop-save-mode 1) ; 自动保存，M-x desktop-save 手动保存
+(setq history-length 250)
+(add-to-list 'desktop-globals-to-save 'file-name-history)
 
 ;; Make "C-x o" prompt for a target window when there are more than 2
 (require-package 'switch-window)
