@@ -8,4 +8,5 @@
 (load-library "init-org") ; load org配置
 (load-library "init-theme") ; 设置主题
 (load-library "init-auto-complete") ; auto-complete
+(load-library "init-paredit") ; paredit
 (load-library "init-slime") ; slime
